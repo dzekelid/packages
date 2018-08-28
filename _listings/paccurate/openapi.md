@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: Paccurate
 x-complete: 1
@@ -32,4 +31,3 @@ paths:
       tags:
       - Shipping
       - Packaging
----

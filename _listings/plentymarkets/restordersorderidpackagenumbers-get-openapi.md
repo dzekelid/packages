@@ -42,6 +42,43 @@ paths:
       - Order
       - Shipping
       - Packages
+    post:
+      summary: Create an order shipping package
+      description: Creates an order shipping package. The ID of the order must be
+        specified.
+      operationId: postRestOrdersOrderShippingPackages
+      x-api-path-slug: restordersorderidshippingpackages-post
+      parameters:
+      - in: body
+        name: /rest/orders/{orderId}/shipping/packages
+        schema:
+          $ref: '#/definitions/holder'
+      - in: path
+        name: orderId
+      responses:
+        200:
+          description: OK
+      tags:
+      - Order
+      - Shipping
+      - Package
+    delete:
+      summary: Delete all order shipping packages for an order
+      description: Deletes all order shipping packages for an order. The ID of the
+        order must be specified.
+      operationId: deleteRestOrdersOrderShippingPackages
+      x-api-path-slug: restordersorderidshippingpackages-delete
+      parameters:
+      - in: path
+        name: orderId
+      responses:
+        200:
+          description: OK
+      tags:
+      - Order
+      - Shipping
+      - Packagesan
+      - Order
   /rest/orders/shipping/package_types:
     get:
       summary: List shipping package types
@@ -92,6 +129,68 @@ paths:
       - Numbers
       - Of
       - Order
+  /rest/orders/{orderId}/shipping/packages/{orderShippingPackageId}:
+    delete:
+      summary: Delete an order shipping package
+      description: Deletes an order shipping package. The ID of the order and the
+        ID of the order shipping package must be specified.
+      operationId: deleteRestOrdersOrderShippingPackagesOrdershippingpackage
+      x-api-path-slug: restordersorderidshippingpackagesordershippingpackageid-delete
+      parameters:
+      - in: path
+        name: orderId
+      - in: path
+        name: orderShippingPackageId
+      responses:
+        200:
+          description: OK
+      tags:
+      - Order
+      - Shipping
+      - Package
+    get:
+      summary: Get an order shipping package
+      description: Gets an order shipping package. The ID of the order and the ID
+        of the order shipping package must be specified.
+      operationId: getRestOrdersOrderShippingPackagesOrdershippingpackage
+      x-api-path-slug: restordersorderidshippingpackagesordershippingpackageid-get
+      parameters:
+      - in: query
+        name: columns
+        description: The properties to be loaded
+      - in: path
+        name: orderId
+      - in: path
+        name: orderShippingPackageId
+      responses:
+        200:
+          description: OK
+      tags:
+      - Order
+      - Shipping
+      - Package
+    put:
+      summary: Update an order shipping package
+      description: Updates an order shipping package. The ID of the order and the
+        ID of the order shipping package must be specified.
+      operationId: putRestOrdersOrderShippingPackagesOrdershippingpackage
+      x-api-path-slug: restordersorderidshippingpackagesordershippingpackageid-put
+      parameters:
+      - in: body
+        name: /rest/orders/{orderId}/shipping/packages/{orderShippingPackageId}
+        schema:
+          $ref: '#/definitions/holder'
+      - in: path
+        name: orderId
+      - in: path
+        name: orderShippingPackageId
+      responses:
+        200:
+          description: OK
+      tags:
+      - Order
+      - Shipping
+      - Package
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0

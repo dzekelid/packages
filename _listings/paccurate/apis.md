@@ -15,11 +15,41 @@ image: ""
 x-kinRank: "7"
 x-alexaRank: "0"
 tags: Packages
-created: "2018-08-26"
-modified: "2018-08-26"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/packages/master/_listings/paccurate/apis.md
 specificationVersion: "0.14"
-apis: []
+apis:
+- name: paccurate.io - Post
+  x-api-slug: post
+  description: a pure-JSON endpoint for packing requests.
+  image: ""
+  humanURL: http://paccurate.io
+  baseURL: https://api.paccurate.io//
+  tags: Shipping, Packages, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/packages/master/_listings/paccurate/post-openapi.md
+- name: paccurate.io - Post
+  x-api-slug: post
+  description: a pure-JSON endpoint for packing requests.
+  image: ""
+  humanURL: http://paccurate.io
+  baseURL: https://api.paccurate.io//
+  tags: Shipping, Packages, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/packages/master/_listings/paccurate/post-openapi.md
+- name: paccurate.io - Post
+  x-api-slug: post
+  description: a pure-JSON endpoint for packing requests.
+  image: ""
+  humanURL: http://paccurate.io
+  baseURL: https://api.paccurate.io//
+  tags: Shipping, Packages, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/packages/master/_listings/paccurate/post-openapi.md
 x-common:
 - type: x-api-gallery
   url: http://oxford.dictionaries.api.gallery.streamdata.io

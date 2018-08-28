@@ -7,8 +7,8 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28761-docs
 x-kinRank: "7"
 x-alexaRank: "878532"
 tags: Packages
-created: "2018-08-26"
-modified: "2018-08-26"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/packages/master/_listings/automox/apis.md
 specificationVersion: "0.14"
 apis:
@@ -26,6 +26,17 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/packages/master/_listings/automox/orgsidpackages-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/packages/master/_listings/automox/orgsidpackages-get-openapi.md
+- name: Automox API - Get Servers Packages
+  x-api-slug: serversidpackages-get
+  description: Returns the command queue for the specified server (endpoint)
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/28761-docs-automox-com.jpg
+  humanURL: https://automox.com
+  baseURL: https://console.automox.com//api
+  tags: SaaS, Technology, Enterprise, Operations, Servers, Security, Service API,
+    Relative Data
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/packages/master/_listings/automox/serversidpackages-get-openapi.md
 x-common:
 - type: x-api-gallery
   url: http://autodesk.api.gallery.streamdata.io

@@ -8,11 +8,21 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "8"
 x-alexaRank: "0"
 tags: Packages
-created: "2018-08-26"
-modified: "2018-08-26"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/packages/master/_listings/watchful/apis.md
 specificationVersion: "0.14"
-apis: []
+apis:
+- name: 'Watchful - '
+  x-api-slug: packages-post
+  description: ""
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/watchful-li-logo.jpg
+  humanURL: http://watchful.li
+  baseURL: https://watchful.li//api/v1
+  tags: Monitoring, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/packages/master/_listings/watchful/packages-post-openapi.md
 x-common:
 - type: x-api-gallery
   url: http://washington.metropolitan.area.transit.authority.api.gallery.streamdata.io

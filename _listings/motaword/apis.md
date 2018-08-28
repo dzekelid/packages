@@ -12,8 +12,8 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "7"
 x-alexaRank: "0"
 tags: Packages
-created: "2018-08-26"
-modified: "2018-08-26"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/packages/master/_listings/motaword/apis.md
 specificationVersion: "0.14"
 apis:
@@ -91,6 +91,43 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/packages/master/_listings/motaword/projectsidpackagelanguage-post-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/packages/master/_listings/motaword/projectsidpackagelanguage-post-openapi.md
+- name: Mota Word - Package the translation of a specific target language to be downloaded.
+  x-api-slug: projectsidpackagelanguage-post
+  description: Package the translation of a specific target language to be downloaded..
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/motaword-logo.png
+  humanURL: http://www.motaword.com
+  baseURL: https://api.motaword.com//
+  tags: API Provider, Translations, Profiles, Relative Data, Service API
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/packages/master/_listings/motaword/projectsidpackagelanguage-post-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/packages/master/_listings/motaword/projectsidpackagelanguage-post-openapi.md
+- name: Mota Word - Track the status of translation packaging.
+  x-api-slug: projectsidpackagecheck-get
+  description: This request will tell you the current progress of the translation
+    packaging. You will use the 'key' provided by the /package call.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/motaword-logo.png
+  humanURL: http://www.motaword.com
+  baseURL: https://api.motaword.com//
+  tags: API Provider, Translations, Profiles, Relative Data, Service API
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/packages/master/_listings/motaword/projectsidpackagecheck-get-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/packages/master/_listings/motaword/projectsidpackagecheck-get-openapi.md
+- name: Mota Word - Package the translation of all languages to be downloaded.
+  x-api-slug: projectsidpackage-post
+  description: Package the translation project, make it ready to be downloaded.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/motaword-logo.png
+  humanURL: http://www.motaword.com
+  baseURL: https://api.motaword.com//
+  tags: API Provider, Translations, Profiles, Relative Data, Service API
+  properties:
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/packages/master/_listings/motaword/projectsidpackage-post-postman.md
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/packages/master/_listings/motaword/projectsidpackage-post-openapi.md
 x-common:
 - type: x-website
   url: http://www.motaword.com
